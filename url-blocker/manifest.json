@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "URL blocker ",
+  "description": "A simple chrome extension to block URL",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webNavigation",
+    "management",
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "activeTab",
+    "<all_urls>",
+    "webRequestBlocking"
+  ],
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["script/script.js"]
+  }
+}
