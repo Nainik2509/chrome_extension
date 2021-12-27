@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Tab collector",
+  "description": "A simple chrome extension to collect different tabs",
+  "version": "1.0.0",
+  "permissions": ["storage", "tabs"],
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["script/script.js"]
+  }
+}
